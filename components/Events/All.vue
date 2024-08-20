@@ -1,0 +1,40 @@
+<template>
+    <!-- display events cards -->
+    <div class="card" v-if="event">
+        <NuxtImg :src="event ? event.imageUrl  : ''" alt="Card Image" class="card-image" />
+        <div class="card-content">
+            <h3 class="card-title">{{event ? event.title  : ''}}</h3>
+            <p class="card-date">{{ formatDate(event.date) }} • {{ formatTime(event.time) }}</p>
+             <!-- Reduce description to 300 characters -->
+            <p class="card-description">
+                {{ event && event.description.length > 300 ? event.description.substring(0, 300) + '...' : event.description }}
+            </p>
+            
+            <NuxtLink :to="`/events/${event.id}`" class="card-link">View details <span><img src="/images/svg/arrow-right.svg" alt=""></span></NuxtLink>
+        </div>
+    </div>
+</template>
+
+<script setup>
+    const { $moment } = useNuxtApp();
+
+    defineProps({
+        event: {
+            type: Object,
+        }
+    });
+
+    // Methods to format date and time
+    const formatDate = (date) => {
+        return $moment(date).format('ddd, MMM Do'); 
+    };
+
+    const formatTime = (time) => {
+        return $moment(time, 'HH:mm').format('hA'); 
+    };
+</script>
+
+<style lang="scss" scoped>
+
+
+</style>

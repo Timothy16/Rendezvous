@@ -1,0 +1,64 @@
+@import '~/assets/styles/mixins.scss';
+.single-event-section{
+    padding-top: 3rem;
+    .event-header{
+        color: var(--color-dark);
+        font-family: $font-bold;
+        font-size: 1.4rem;
+        font-style: normal;
+        line-height: 28.1px; 
+    }
+    .event-text{
+        color: var(--color-dark);
+        font-family: $font-primary;
+        font-size: 1rem;
+        font-style: normal;
+        line-height: 18.75px; 
+    }
+    .l-f{
+        margin-left: 1.5rem;
+    }
+    .l-ff{
+        margin-left: 4rem;
+    }
+    i{
+        color: #9B51E0;
+    }
+    .event-header-r{
+        color: var(--color-dark);
+        font-family: $font-bold;
+        font-size: 1rem;
+        font-style: normal;
+        line-height: 28.1px; 
+        padding-top: 2rem;
+    }
+    p{
+        color: var(--color-dark);
+        font-family: $font-primary;
+        font-size: 1rem;
+        font-style: normal;
+        line-height: 18.7px; 
+        padding-top: 1rem;
+    }
+    .event-price-h{
+        color: var(--color-dark);
+        font-family: $font-primary;
+        font-size: 1.1rem;
+        font-style: normal;
+        line-height: 18.7px; 
+        padding-top: 1rem;
+        font-weight: 600;
+    }
+    .event-price{
+        color: #9B51E0;
+        font-family: $font-bold;
+        font-size: 1rem;
+        font-style: normal;
+        line-height: 18.7px; 
+        font-weight: 600;
+    }
+    .socials{
+        margin-top: 1rem;
+    }
+}
+
