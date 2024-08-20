@@ -3,7 +3,6 @@
     background-color: rgba(255, 255, 255, 0.6);
 }
 .navbar-bg-all{
-    // background-color: rgba(255, 255, 255, 0.6);
     margin: 30px 100px;
     border-radius: 20px;
     @media only screen and (max-width: 768px) {
@@ -41,20 +40,9 @@
             margin-left: .1rem;
         }
     }
-    // li a::after{
-    //     content: "" !important;
-    //     position: absolute !important;
-    //     background-color: var(--color-primary) !important;
-    //     height: 3px !important;
-    //     width: 0 !important;
-    //     left: 0 !important;
-    //     bottom: -10px !important;
-    //     transition: 0.3s !important;
-    // }
     li a:hover{
         color: var(--color-primary) !important;
         border-bottom: 4px solid var(--color-primary);
-        // width: 100% !important;
     }
     .btn-login{
         color: var(--color-primary);

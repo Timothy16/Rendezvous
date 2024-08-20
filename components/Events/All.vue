@@ -1,7 +1,7 @@
 <template>
     <!-- display events cards -->
     <div class="card" v-if="event">
-        <NuxtImg :src="event ? event.imageUrl  : ''" alt="Card Image" class="card-image" />
+        <NuxtImg format="webp" :src="event ? event.imageUrl  : ''" alt="Card Image" class="card-image" />
         <div class="card-content">
             <h3 class="card-title">{{event ? event.title  : ''}}</h3>
             <p class="card-date">{{ formatDate(event.date) }} • {{ formatTime(event.time) }}</p>

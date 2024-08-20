@@ -12,21 +12,21 @@
             <div class="event-gg">
                 <div class="event-card-category">
                     <div class="event-card">
-                        <img src="/images/event1.png" alt="Online Events" class="event-card-image">
+                        <NuxtImg src="/images/event1.png" format="webp" alt="Online Events" class="event-card-image" />
                         <div class="event-card-overlay">
                         <h3 class="event-card-title">Online Events</h3>
                         </div>
                     </div>
 
                     <div class="event-card">
-                        <img src="/images/event2.png" alt="Physical Events" class="event-card-image">
+                        <NuxtImg src="/images/event2.png" format="webp" alt="Physical Events" class="event-card-image" />
                         <div class="event-card-overlay">
                         <h3 class="event-card-title">Physical Events</h3>
                         </div>
                     </div>
 
                     <div class="event-card">
-                        <img src="/images/event3.png" alt="Hybrid Events" class="event-card-image">
+                        <NuxtImg src="/images/event3.png" format="webp" alt="Hybrid Events" class="event-card-image" />
                         <div class="event-card-overlay">
                         <h3 class="event-card-title">Hybrid Events</h3>
                         </div>

@@ -3,7 +3,7 @@
         <nav id="navbar" class="navbar navbar-expand-lg navbar-bg-all nav-c-c" :class="{'nav-c-c' : checkUrl == '/'}">
             <div class="container-fluid">
                 <NuxtLink class="navbar-brand" to="/" >
-                    <NuxtImg  src="/images/svg/logo.svg" alt="" srcset="" />
+                    <NuxtImg  src="/images/svg/logo.svg" class="img-fluid" alt="" srcset="" />
                 </NuxtLink>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

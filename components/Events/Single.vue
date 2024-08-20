@@ -2,7 +2,7 @@
     <div class="container-all-n" v-if="event">
         <div class="single-event-section" >
             <div class="image-container">
-                 <NuxtImg  :src="event ? event.imageUrl : ''" alt="" class=" rounded" srcset="" />
+                 <NuxtImg format="webp" :src="event ? event.imageUrl : ''" alt="" class=" rounded" srcset="" />
             </div>
            
 
