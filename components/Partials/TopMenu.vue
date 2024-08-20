@@ -88,7 +88,8 @@
     padding-left: 70px;
 
     @media only screen and (max-width: 768px) {
-           padding: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
     }
 }
 </style>
