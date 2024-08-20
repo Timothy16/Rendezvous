@@ -82,7 +82,9 @@
     // transition: background-color 0.3s ease; 
     transition: background-color 0.5s  ease-in-out, box-shadow 0.5s  ease-in-out;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 0;
+    margin: 30px 0;
     border-radius: 0;
+    padding-right: 70px;
+    padding-left: 70px;
 }
 </style>

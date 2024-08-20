@@ -12,7 +12,7 @@
             </div>
             <div class="col-sm-12 col-lg-3 col-md-2">
                 <NuxtLink :to="`/events/by-category?category=${selectedValue}`">
-                     <Button> Search </Button>
+                     <Button :disabled="!selectedValue"> Search </Button>
                 </NuxtLink>
                
             </div>
