@@ -3,7 +3,7 @@ export default defineEventHandler(async (event) => {
 
     const queryParams = getQuery(event)
     const parameter = event.context?.params?.id
-    console.log("parameter", parameter)
+    
     const newRequest = await $fetch(`${config.API_BASE}/events/${parameter}`,
         {
             method: "GET",

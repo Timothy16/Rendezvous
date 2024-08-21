@@ -10,18 +10,30 @@
                 </div>
             </div>
             <div class="events-card">
-                <EventsAll v-for="event in events.slice(0,3)" :key="event.id" :event="event"/>
+                <EventsAll v-for="event in randomEvents" :key="event.id" :event="event"/>
             </div>
         </div>
     </section>
 </template>
 
 <script setup>
-   defineProps({
+   const props = defineProps({
         events: {
             type: Array,
+            required: true
         }
     });
+
+    // Shuffle the array and get the first 3 random events
+    const shuffleArray = (array) => {
+        return array
+            .map((item) => ({ item, sort: Math.random() }))
+            .sort((a, b) => a.sort - b.sort)
+            .map(({ item }) => item);
+    };
+
+    // Select random three events from the shuffled array
+    const randomEvents = shuffleArray(props.events).slice(0, 3);
 </script>
 
 <style lang="scss" scoped>
