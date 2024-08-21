@@ -1,6 +1,9 @@
 @import '~/assets/styles/mixins.scss';
 .single-event-section{
     padding-top: 3rem;
+    @media only screen and (max-width: 768px) {
+        padding-top: 1rem;
+     }
     .event-header{
         color: var(--color-dark);
         font-family: $font-bold;

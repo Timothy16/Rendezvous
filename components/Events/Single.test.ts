@@ -8,7 +8,7 @@ const mockEvent = {
   title: 'Sample Event',
   date: '2023-10-03',
   time: '18:00',
-  imageUrl: '/images/sample-event.jpg',
+  imageUrl: 'https://example.com/image.jpg',
   address: '123 Main Street, Lagos',
   organizer: {
     name: 'John Doe',
@@ -74,7 +74,6 @@ describe('Single', () => {
   });
 
   it('renders organizer information correctly', () => {
-    // expect(wrapper.find('organizer-name').text()).toContain(mockEvent.organizer.name);
     const organizerName = wrapper.find('.organizer-name').text(); 
     expect(organizerName).toContain(mockEvent.organizer.name); 
   });
@@ -100,5 +99,10 @@ describe('Single', () => {
     });
 
     expect(wrapper.find('.event-price').text()).toBe('Free');
+  });
+
+  it('renders the correct image URL', () => {
+    const image = wrapper.find('.rounded');
+    expect(image.attributes('src')).toBe(mockEvent.imageUrl);
   });
 });

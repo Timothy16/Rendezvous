@@ -42,7 +42,24 @@
     }
     li a:hover{
         color: var(--color-primary) !important;
+    }
+    .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+
+        @media only screen and (max-width: 768px) {
+            align-items: unset;
+        }
+    }
+      
+    .navbar-nav a {
+        transition: border-bottom 0.3s ease-in-out;
+    }
+      
+    .nav-item a:hover {
         border-bottom: 4px solid var(--color-primary);
+        transition: border-bottom 0.3s ease-in-out;
     }
     .btn-login{
         color: var(--color-primary);
