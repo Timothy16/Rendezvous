@@ -4,8 +4,6 @@
             <div class="image-container">
                  <NuxtImg format="webp" :src="event ? event.imageUrl : ''" alt="" class=" rounded" srcset="" />
             </div>
-           
-
             <div class="row mt-4">
                 <div class="col-lg-8 col-sm-12 col-md-8">
                     <div class="event-header">{{ event ? event.title : '' }}</div>
@@ -14,7 +12,7 @@
                         <div class="event-text l-f"><NuxtImg  src="/images/svg/time.svg" alt="" srcset="" /> {{ formatTime(event.time) }} </div>
                     </div>
                     <div class="event-text mt-2"><NuxtImg  src="/images/svg/location.svg" alt="" srcset="" /> {{ event ? event.address : '' }}</div>
-                    <div class="event-text mt-2"><NuxtImg  src="/images/svg/user.svg" alt="" srcset="" /> {{ event ? event.organizer.name : '' }}</div>
+                    <div class="event-text organizer-name mt-2"><NuxtImg  src="/images/svg/user.svg" alt="" srcset="" /> {{ event ? event.organizer.name : '' }}</div>
 
                     <div class="event-header-r">Event description</div>
                     <p>
@@ -22,7 +20,7 @@
                     </p>
 
                     <div class="event-header-r" >Event category</div>
-                    <p style="text-transform:capitalize;">
+                    <p  class="p-category" style="text-transform:capitalize;">
                         {{ event ? event.category  : ''}}
                     </p>
 

@@ -19,8 +19,6 @@
 
     event.value = data.value?.data?.event
 
-    console.log("event", event.value)
-
     definePageMeta({
         layout: "others",
     });

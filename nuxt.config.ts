@@ -31,6 +31,7 @@ export default defineNuxtConfig({
   
   modules: [
     '@nuxt/image',
+    '@nuxt/test-utils/module'
   ],
   plugins: [
     '~/plugins/moment.js' 
